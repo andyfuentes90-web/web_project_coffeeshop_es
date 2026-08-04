@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shaory - Triple Espresso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="page">
+    <!-- Encabezado -->
+    <header class="header">
+      <!-- Logo -->
+      <div class="logo">
+        <img
+          class="logo-image"
+          src="images/logo_coffeeshop_dark.svg"
+          alt="Logo Triple Peaks Café"
+        />
+      </div>
+      <!-- Navegación -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#reservation" class="nav__link">Reservar una mesa</a>
+          </li>
+          <li class="nav__item">
+            <a href="#footer" class="nav__link">Contactos</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Título y descripción -->
+      <!-- Título principal -->
+      <h1 class="header__title">
+        <span class="header__title-accent">Café de especialidad</span>
+        <span class="header__title-text">en Triple Peaks</span>
+      </h1>
+      <!-- Descripción -->
+      <p class="header-description">
+        ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+        para darte energía y motivar tu creatividad.
+      </p>
+      <!-- Horarios y dirección -->
+      <div class="header__info">
+        <div class="header__hours">
+          <p class="header__info-text">Horario:</p>
+          <p class="header__info-text">
+            Lunes a Viernes (de 10:00h a 19:00h)<br />
+            Sábados y Domingos (de 11:00h a 18:00h)
+          </p>
+        </div>
+        <p class="header__info-text header__info-text--right">
+          Avenida del Éxito 200, Ciudad Triple Peaks
+        </p>
+      </div>
+      <!-- Imagen del header (posicionada de forma absoluta vía CSS) -->
+      <img
+        class="header__image"
+        src="images/inside_coffee_shop.png"
+        alt="Vista del interior del Triple Peaks Café"
+      />
+    </header>
+    <!-- Contenido Principal -->
+    <main class="content">
+      <!-- Sección de Reserva -->
+      <section id="reservation" class="reservation">
+        <h2 class="reservation__title">Reservar una mesa</h2>
+        <form class="booking-form">
+          <label for="name" class="booking-form__label">Nombre *</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Nombre"
+            required
+          />
+
+          <label for="guests" class="booking-form__label"
+            >Número de comensales *</label
+          >
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            placeholder="1-8"
+            min="1"
+            max="8"
+            required
+          />
+
+          <label for="datetime" class="booking-form__label"
+            >Fecha y hora *</label
+          >
+          <input
+            type="datetime-local"
+            id="datetime"
+            name="datetime"
+            class="booking-form__input"
+            required
+          />
+
+          <label for="email">Tu correo electrónico *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="booking-form__input"
+            placeholder="email@email.com"
+            required
+          />
+
+          <label class="booking-form__checkbox-label">
+            <input type="checkbox" class="booking-form__checkbox" required />
+            Acepto los términos de uso
+          </label>
+
+          <button type="submit" class="booking-form__button">
+            Reservar una mesa
+          </button>
+        </form>
+      </section>
+    </main>
+    <!-- Pie de página -->
+    <footer id="footer" class="footer">
+      <div class="footer__content">
+        <p class="footer__title">Redes sociales</p>
+        <nav class="footer__social">
+          <a href="#" class="footer__link">Facebook</a>
+          <a href="#" class="footer__link">Instagram</a>
+        </nav>
+      </div>
+      <p class="footer__copyright">© 2026 Andres Fuentes</p>
+    </footer>
+  </body>
+</html>
