@@ -187,14 +187,19 @@
   margin-bottom: 8px;
   color: #000000;
 }
-booking-form__label--checkbox {
+.booking-form__label--checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   gap: 12px;
   margin-bottom: 0;
   cursor: pointer;
   user-select: none;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
 }
 .booking-form__input {
   width: 100%;
